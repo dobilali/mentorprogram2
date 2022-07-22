@@ -1,0 +1,172 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+
+
+}
+
+
+.container{
+width: 456px;
+height: 1280px;
+
+
+background: #FFFFFF;
+
+margin:100px auto;
+position: relative;
+}
+body{background-color: gray;
+}
+
+.kep{
+    display: flex;
+    justify-content: center;
+    padding-top: 34px;
+    padding-bottom:7px; 
+}
+.kep > img{
+    border: 10px solid #006633;
+border-radius: 200px;
+background-blend-mode: normal;
+height: 234px;
+width: 234px;
+
+border-radius: 200px;
+align-items: center;
+
+}
+
+
+.fullname, .nickname{
+    color: #006633;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+}
+.fullname{
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+}
+
+.nickname{  
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+}
+
+.fejlec{
+    height: 32px;
+width: 456px;
+
+background: #006633;
+display: flex;
+justify-content: center;
+
+}
+
+.cim{
+    text-align: center;
+    padding: 0 10px;
+    transform: skew(30deg);
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 23px;
+text-transform: uppercase;
+
+/* Színes/Fekete */
+
+color: #000000;
+
+}
+
+.hatter{
+    background-color: white;
+    transform: skew(-30deg);
+    height:32px;
+    
+    align-items: center;
+    display: flex;
+   
+    
+}
+
+.tartalom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+
+
+color: #006633;
+}
+
+.gombok{background: #006633;
+    border-radius: 68px;
+    padding: 8px 4px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+   
+
+
+padding: 8px 4px;   
+
+}
+
+.box{
+    
+    margin-top:20px;
+}
+
+span{padding-bottom:4px;}
+
+
+.tartalom2{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.tartalom2 >span{
+    margin-top:2px;
+    margin-right: 4px;
+    padding:4px 16px 4px 12px;
+}
+
+
+.pozicios{
+    position:absolute ;
+    top:391px;
+}
+
+
+.t1{   align-items: center;
+    }
+.rendezes{text-align: justify;
+    
+    margin: 10px 8px 9px 8px;
+   
+line-height: 28px;
+
+   
+}
+

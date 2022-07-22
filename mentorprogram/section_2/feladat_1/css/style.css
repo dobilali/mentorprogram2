@@ -1,0 +1,195 @@
+*
+{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+
+.wrapper{
+height: 360px;
+width: 500px;
+
+border-radius: 16px;
+background: #006633;
+margin:100px auto;
+
+
+position: relative;
+
+
+}
+
+.elso{
+    position: absolute;
+    top:39px;
+    left:117px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+
+
+/* Fehér */
+
+color: #FFFFFF;
+}
+.fa-envelope{
+    position: absolute;
+    height: 39.99999237060547px;
+width: 55px;
+left: 50px;
+top: 38px;
+
+color: #FFFFFF;
+font-size: 45px ;
+
+
+
+
+
+}
+
+
+input[type=text] {
+
+    width:400px;
+    height:50px;
+    background: #FFFFFF;
+/* Zöld */
+
+border: 2px solid #55AE3A;
+border-radius: 4px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 29px;
+line-height: 34px;
+font-feature-settings: 'pnum' on, 'lnum' on;
+
+/* Színes/Fekete */
+
+color: black;
+
+padding-left: 11.73px;
+}
+
+
+
+
+
+#nev{
+    position: absolute;
+    left:50px;
+    top:97px;
+    bottom:213px;
+}
+
+#email{
+    position: absolute;
+    top:167px;
+    left:50px;
+    bottom: 143px;
+}
+
+.subscribe{
+
+    height: 50px;
+    width: 240px;
+    left: 130px;
+    top: 274px;
+    border-radius: 44px;
+    padding: 8px;
+    
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 31px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+
+/* Fehér */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+font-size: 31px;
+
+
+letter-spacing: 0em;
+/* Zöld */
+
+background: #55AE3A;
+/* Elevation / BLACK / 01 */
+
+box-shadow: 0px 1px 2px #1E1E25, 0px 2px 4px #1E1E22;
+border-radius: 44px;
+
+position:absolute;
+bottom:36px;
+left:130px;
+
+
+text-align: center;
+align-items: center;
+
+
+}
+
+
+.masik{
+
+width: 252px;
+height: 16px;
+
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+/* Fehér */
+
+color: #FFFFFF;
+
+}
+
+
+.asd{
+    padding-left: 9px;
+    padding-top:7px;
+    padding-left:50.05px;
+
+}
+
+.fa-bell{
+    position: absolute;
+    left:19.5px;
+}
+
+.subscribe:hover{
+
+    opacity: 0.5;
+}
+
+::placeholder{
+font-family: 'Roboto';
+font-size: 29px;
+font-weight: 400;
+line-height: 34px;
+color: black;
+
+}

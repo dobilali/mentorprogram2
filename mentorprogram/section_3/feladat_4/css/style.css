@@ -1,0 +1,301 @@
+* {box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+ 
+body{
+   
+    background-color: gray;
+}
+
+.profilkep >img{
+    width:256px;
+    height: 256px;
+    border-radius: 50%;
+
+}
+
+.container{
+    width:1366px;
+    height: 272px;
+    background-color: white;
+    margin:100px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.profil{
+    display: flex;
+    flex-direction: row;
+   
+    width:40%;
+    height:100%;   
+    
+    align-items: center; 
+}
+
+.adatok{
+display: flex;
+flex-direction: column;
+align-items: baseline;
+width: 100%;
+}
+
+
+.nev{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+
+/* Színes/Fekete */
+
+color: #000000;
+margin-top: 16px;
+margin-bottom: 24px;
+}
+
+.ikon{
+    
+padding: 4px;
+background: #55AE3A;
+border-radius: 50%;
+margin:4px;
+color:#FFFFFF;
+}
+
+.kovetes{
+
+    width: 138px;
+height: 51px;
+background: #006633;
+border-radius: 44px;
+border:none;
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+color: #FFFFFF;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+text-transform: uppercase;
+}
+
+.kovetes:hover{
+    opacity: 0.6;
+    color:yellow;
+    background-color: black;
+}
+
+.adatok >span{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+/* Színes/Fekete */
+
+color: #000000;
+}
+
+.gombkozep{
+    width: 100%;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+
+
+
+
+.jobboldali{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.szoveg{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: justify;
+    
+    color: #000000;
+    height:40%;
+    margin:5px;
+}
+
+
+.navigaciok{
+    display: flex;
+    flex-direction: row;
+    height:60%;
+
+}
+.balnav,.jobbnav{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.navi{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: justify;
+    
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.navi>i{
+    width:44px;
+    height:44px;
+    border-radius: 50%;
+    background-color: #006633;
+    color:white;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+}
+
+.navi>i:hover{
+    background-color: rgb(22, 68, 220);
+    color:rgb(36, 214, 223);
+    
+}
+
+
+.meglepetes{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    
+}
+
+
+.meglepetes li{
+
+   
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin:4px;
+}
+.meglepetes i{
+    height: 44px;
+    width:44px;
+    background-color: #006633; 
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 50%;
+}
+.meglepetes a{
+    text-decoration: none;
+}
+
+
+.meglepetes i:hover{
+    background-color: red;
+    color:blue;
+}
+
+.k2 {display: none;}
+
+.tanc{display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.help{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+@media only screen and (max-width: 300px) {
+   .container{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    height:791px;
+   }
+   .profil{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+   }
+   .kovetes{display: none;}
+   .medias{
+    flex-flow: row wrap;
+   }
+   .nev{
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+.jobboldali{width:100%;}
+
+.szoveg{
+    width:300px;
+    height: auto;
+}
+
+    .profilkep >img{
+        width:266px;
+        height:266px;
+        margin: 12px 16px 3px 16px;
+    }
+    .navigaciok{
+        display: none;
+    }
+    .meglepetes{
+        display: flex;
+        width: 300px;
+    }
+
+    .k2{display: block;}
+    .k2kozepre{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .help{flex-direction: row;
+    flex-wrap: wrap;
+    padding-right:45px;}
+    .tanc{padding-right: 45px;}
+  }
+
+  

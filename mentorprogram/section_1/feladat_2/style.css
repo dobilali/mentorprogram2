@@ -1,0 +1,116 @@
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    background: #006633;
+    border-radius: 16px;
+    
+    margin :100px auto;
+    height: 150px;
+    width: 500px;
+
+}
+
+.message {
+    
+    font-size: 20px;
+    
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  
+    top: 12px;
+    text-align: center;
+    
+    
+    
+    color: #FFFFFF;
+
+   padding-top: 12px;
+
+}
+.second{
+    font-weight: 400;
+    padding-top:0;
+}
+.first{
+    font-weight: 700;
+}
+
+.button1{  
+margin-right: 11px;
+border-radius: 8px;
+border: 1px solid #F2F2F2;    
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 32px;
+background: #BFBFBF;
+
+box-sizing: border-box;
+
+
+color:white;
+font-family: 'Work Sans';
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0px;
+text-align: center;
+text-transform: uppercase;
+
+}
+
+
+.button_delete{
+ 
+   width: 88px;
+   height: 40px;
+    background: #EF3A43;
+    display: flex;
+    flex-direction: row;
+    padding: 8px 32px;
+   
+    
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8px;    
+    color:white;
+    align-items: center;
+    justify-content: center;
+    transition: duration 2s;
+    margin-left: 11px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+
+}
+
+.button1:hover{
+    background: rgb(76, 80, 76);
+    color:rgb(113, 212, 86);
+    
+    }
+.button_delete:hover{
+    background: rgb(22, 1, 1);
+    color: rgb(211, 14, 14);
+    
+}
+body{
+    background-color: gray;
+}

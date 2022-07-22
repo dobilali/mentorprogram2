@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+
+}
+
+.container{
+    margin: 100px auto;
+    width:614px;
+    height:560px;
+}
+.first{
+    width:614px;
+    /*height:310px;*/
+    height:310px;
+
+}
+.first > img{
+    width: 100%;
+    height: 310px;;
+}
+
+
+.kep > img{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    float: left;
+    margin: 0.3rem;
+   
+}
+
+.kep{
+    width:60px;
+    height:74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background: #006633;
+    color:white;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+display: flex;
+flex-direction: row;
+flex-flow: row  ;
+height:38px;
+align-items: center;
+}
+
+.hatter{
+    background-color: white;
+    transform: skew(-30deg);
+    margin:0px 20px;
+    height: 100%;
+}
+.sport {
+    color:black;    
+    padding: 0px 10px;
+      
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    height: 100%;
+    transform: skew(30deg);
+
+}
+
+.sport > i{
+    margin-right:5px;
+}
+
+.datum{
+    margin-left: auto;
+}
+
+
+
+.second{
+   
+
+
+height:250px
+}
+
+
+
+.szoveg{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 126%;
+text-align: justify;
+color: #000000;
+
+
+}
+
+.cim{
+    display: flex;
+   
+    align-items: center;
+   ;
+    
+}
+
+
+.cimsor{
+   
+    height: 74px;
+    width: 503px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #000000;
+   
+    
+}
+
+
+
+

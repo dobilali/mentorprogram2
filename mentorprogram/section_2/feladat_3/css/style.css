@@ -1,0 +1,31 @@
+*
+{
+box-sizing:border-box;
+margin:0;
+padding: 0;
+
+}
+
+th{
+    color:white;
+    background: #006633;   
+
+}
+
+
+table{
+    height: 56px;
+    width:1720px ;
+    position: relative;
+    margin:100px auto;
+}
+
+.utolso {
+    width: 40px;
+}
+
+.elso{
+    width:55px;
+    padding-left: 5px;
+}
+
