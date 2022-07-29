@@ -15,22 +15,30 @@
   
 
     <div class="wrapper">
-        <i class="	fa fa-envelope"></i><p class="elso">Hírlevél</p>
-
+        <div class="newsletter-container">
+          <div class="newsletter">
         
-            <input type="text" id="nev" name="nev" placeholder="Név"><br>
-            <input type="text" id="email" name="email" placeholder="E-mail cím"><br>
+              <i class="fa fa-envelope"></i><p class="newsletter-text">Hírlevél</p>
+          </div>
+        </div>
+        
+       <div class="name-container">
+            <input type="text" id="name" name="name" placeholder="Név"><br>
+       </div>
+          <div class="email-container"> 
+                <input type="text" id="email" name="email" placeholder="E-mail cím">
+              <div class="checkbox-container">
+                   <input type="checkbox" id="accept" name="" value=""> Elfogadom az <span class="underline"> adatkezelési tájékoztatót.</span>
+              </div>
+        </div>
 
-
-
-
-        <p class="masik"><input type="checkbox" id="elfogad" name="" value=""> Elfogadom az <u>adatkezelési tájékoztatót.</u></p>
-
-        <button class="subscribe">
-            
-            <i class="far fa-bell"></i> <p class="asd">Feliratkozás</p>
-           
+        <div class="button-container">
+            <button class="subscribe">
+                  
+              <i class="far fa-bell"></i> <p class="subscribe-text">Feliratkozás</p>
+              
             </button>
+        </div>
     </div>
 
 

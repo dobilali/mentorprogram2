@@ -1,163 +1,151 @@
-* {
+*
+{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 
 }
 
-.wrapper{
-height: 360px;
-width: 300px;
-border-radius: 36px;
-background: #55AE3A;
-margin:100px auto;
-position: relative;
-
+:root
+{
+    --green:#006633;
+    --light-green:#55AE3A;
+    --white:#ffffff;
 }
 
+body
+{
+    background-color: gray;
+    font-family: 'Roboto';
+}
 
+.wrapper
+{
+    height: 360px;
+    border-radius: 36px;
+    background: var(--light-green);
+    margin:100px auto;
+}
 
+.wrapper,.sport-type,.nav-mid,.name
+{
+    width: 300px;
+}
 
-img{
+.image
+{
+    width:100%;
+    height: 128px;
+}
+
+.image> img
+{
     border-radius: 100px;
     height: 128px;
     width: 128px;
     border: 4px solid #55AE3A;
-    position: absolute;
-    left: 86px;
-  top: 4px;
+    object-fit: cover;
   
 }   
 
-.nev{
+.name
+{
     height: 20px;
-    width: 300px;
-    
-    top: 129px;
-    position: absolute;
-
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 20px;
-
-
-display: flex;
-
-justify-content: center;
-color: #FFFFFF;
-
-}
-
-.sportag{
-   
-    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
     color: #FFFFFF;
-    
-    width:300px;
-    top:154px;
-    
-    margin: 5px auto 14px;
+}
+
+.sport-type
+{
+    color: #FFFFFF;
+    height: 22px;     
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.article
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 17px;
+    width: 142px;
+}
+
+
+.icon-background
+{
    
-
-   
-
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+}
+.icon-background,ul li
+{
+    background-color: var(--green);
+}
+.text
+{
+    height: 116px;
+    width: 250px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    color: #FFFFFF;
 }
 
-.cimszo{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: center;
-
-/* Fehér */
-
-color: #FFFFFF;
-height: 17px;
-width: 142px;
-left: 90.99993896484375px;
-top: 154px;
-position: absolute;
-
+.text-mid{
+    margin-top: 14px;
+    margin-bottom: 12px;
 }
 
-
-.szoveg{
-position: absolute;
-height: 116px;
-width: 249.6644287109375px;
-left: 25.00006103515625px;
-top: 185px; 
-
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-text-align: justify;
-color: #FFFFFF;
-}
-
-.fa-soccer-ball-o{
-    position: absolute;
-    top:155px;
-    left:71.68px;
-
-}
-
-
-ul {
-        
-    width: 200px;
-    height: 30px;
-    
+ul 
+{
     display: flex;
-    flex:1;
     justify-content: space-between;
     list-style: none;
- 
-}
-
-ul li{
-        
-     
-
-   
-
-text-decoration: none;
-
-
-text-align: center;
-font-size: 20px;
-display: block;
-width:30px;
-height:30px;
-
-}
-
-ul li a  {
-    background: #006633;
-    text-decoration: none;
-    color:white;
-    display: block;
-    border-radius: 50%;
-}
-
-nav{
-    position: absolute;
-    top:313px;
-    left:50px;
-    width:200px;
     height: 30px;
 }
 
+nav,ul
+{
+    width:200px;
+}
 
-li a:hover{
-    background-color: rgb(41, 228, 31);
-    color:red;
+ul li, ul li a,.nav-mid,.text-mid,.text,.icon-background,.sport-type,.name,.image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li
+{
+    font-size: 15px;
+   
+}
+
+ul li a  
+{
+    color:var(--white);
+}
+
+ul li, ul li a 
+{
+    text-decoration: none;
+    border-radius: 50%; 
+    height:30px;
+    width:30px;
+}
+
+ li a:hover
+{
+    background-color: var(--white);
+    color:var(--green);
 }

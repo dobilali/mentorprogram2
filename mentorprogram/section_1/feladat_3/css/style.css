@@ -1,4 +1,5 @@
-*{
+*
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,110 +7,85 @@
 
 body{
     background-color: gray;
+    font-family: 'Roboto';
+}
+
+:root{
+    --green:#006633;
+    --white:#FFFFFF;
+    --orange:#DF7E24;
+    --lightgray:#C4C4C4;
+    --black:#000000;
 }
 
 .container{
     width:1334px;
     height:120px;
     margin:50px auto;
-   
-    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    background-color: var(--white);
+}
+.container,.message
+{
+    display: flex;
     align-items: center;
-    background-color: white;
 }
 
-.first {
-   
-    background:#C4C4C4;   
+
+.picture {
+    background:var(--lightgray);   
     width: 120px;
     height:120px;
    
 }
-.first >img  {
+.picture >img  {
     height: 120px;
     width:120px;
     object-fit: cover;
 }
 
-.second{  
-    
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+.message{  
     font-size: 28px;
     line-height: 33px;
-    display: flex;
-    align-items: center;
     height: 103px;
     width: 620px;
-    color: #000000;
 }
 
-
-.third {
-  
+.date {
     height: 23px;
     width: 183px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
-    font-feature-settings: 'liga' off;
-    color: #000000;
-    text-align: center;
+}
+
+.date,.message
+{
+    font-weight: 700;
+    color:var(--black);
+}
+
+.button-equals,.button-list,.button-pen,.button-trash{
+    background-color:var(--green);
+    color:var(--white);
+    border:none;
+    font-size: 30px;
+}
+
+.button-pen
+{
+    margin-right: 32px;
 }
 
 button {
-   
     height: 56px;
-    justify-content: center;
     width: 56px;
     border-radius: 32px;
 }
 
-.button1{
-    
-    padding: 4px, 8px, 4px, 8px;
-    background-color: #006633;
-    color:white;
-    border:none;}
-
-
-
-.button2{
-
-background-color: #006633;
-color:white;
-border:none;
-}
-
-.button3{
-
-background-color: #006633;
-color:white;
-border:none;
-}
-
-.button4{
-    
-    align-items: center;
-    background-color: #006633;
-    color:white;
-    border:none;
-}
-
-.fas {
-    font-size: 30px;
-}
-
-
 button:hover{
-    background-color: #DF7E24;
+    background-color: var(--orange);
 }
 

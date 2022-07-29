@@ -1,31 +1,38 @@
 *
 {
-box-sizing:border-box;
-margin:0;
-padding: 0;
-
+    box-sizing:border-box;
+    margin:0;
+    padding: 0;
 }
 
+:root
+{
+    --green:#006633;
+    --white:#ffffff;
+}
 th{
-    color:white;
-    background: #006633;   
-
+    color:var(--white);
+    background: var(--green);
 }
 
 
 table{
     height: 56px;
-    width:1720px ;
-    position: relative;
-    margin:100px auto;
+    max-width:1720px;
+    width:100%;
 }
 
-.utolso {
-    width: 40px;
+.last-column {
+    width: 5%;
+    text-align: right;
+    padding-right: 10px;
 }
 
-.elso{
-    width:55px;
-    padding-left: 5px;
+.first-column{
+    width:5%;
+    padding-left: 10px;
 }
 
+.column{
+    width:11.25% ;
+}

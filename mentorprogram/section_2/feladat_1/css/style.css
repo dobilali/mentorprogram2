@@ -1,195 +1,137 @@
 *
-{box-sizing: border-box;
-margin: 0;
-padding: 0;
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-
-.wrapper{
-height: 360px;
-width: 500px;
-
-border-radius: 16px;
-background: #006633;
-margin:100px auto;
-
-
-position: relative;
-
-
+:root
+{
+ --green:#006633;
+ --light-green:#55AE3A;
+ --white: #ffffff;
+ --black:#000000;
 }
-
-.elso{
-    position: absolute;
-    top:39px;
-    left:117px;
+body
+{
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 38px;
-/* identical to box height */
-
-
-/* Fehér */
-
-color: #FFFFFF;
-}
-.fa-envelope{
-    position: absolute;
-    height: 39.99999237060547px;
-width: 55px;
-left: 50px;
-top: 38px;
-
-color: #FFFFFF;
-font-size: 45px ;
-
-
-
-
-
 }
 
+.wrapper
+{
+    height: 360px;
+    width: 500px;
+    border-radius: 16px;
+    background: var(--green);
+    margin:100px auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
+.wrapper,.button-container,.subscribe,.name-container,.newsletter-container,.newsletter,.email-container
+{
+    align-items: center;
+}
+
+.newsletter-container,.checkbox-container,input[type=text]{
+    width: 400px;
+}
+.newsletter
+{
+    flex-direction: row;
+}
+
+.checkbox-container
+{
+    flex-direction: row;
+    margin-top:10px;
+    color:white;
+    font-weight: 400;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.underline
+{
+    padding-left:5px;
+    text-decoration: underline;
+}
+.email-container
+{
+    flex-direction: column;
+}
+
+.email-container,.checkbox-container,.newsletter-container,.name-container,.subscribe,.button-container,.newsletter,.wrapper
+{
+    display:flex;
+}
+.newsletter-text
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.fa-envelope
+{   
+    color: #FFFFFF;
+    font-size: 45px;
+    margin-right: 12px;
+}
+
+#accept
+{
+    margin-right: 5px;
+}
 input[type=text] {
-
-    width:400px;
     height:50px;
     background: #FFFFFF;
-/* Zöld */
-
-border: 2px solid #55AE3A;
-border-radius: 4px;
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 29px;
-line-height: 34px;
-font-feature-settings: 'pnum' on, 'lnum' on;
-
-/* Színes/Fekete */
-
-color: black;
-
-padding-left: 11.73px;
+    border: 2px solid #55AE3A;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 34px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: var(--black);
+    padding-left: 12px;
 }
 
-
-
-
-
-#nev{
-    position: absolute;
-    left:50px;
-    top:97px;
-    bottom:213px;
-}
-
-#email{
-    position: absolute;
-    top:167px;
-    left:50px;
-    bottom: 143px;
-}
-
-.subscribe{
-
+.subscribe
+{
     height: 50px;
     width: 240px;
-    left: 130px;
-    top: 274px;
     border-radius: 44px;
     padding: 8px;
-    
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 31px;
-line-height: 36px;
-display: flex;
-align-items: center;
-text-align: center;
-
-/* Fehér */
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-font-size: 31px;
-
-
-letter-spacing: 0em;
-/* Zöld */
-
-background: #55AE3A;
-/* Elevation / BLACK / 01 */
-
-box-shadow: 0px 1px 2px #1E1E25, 0px 2px 4px #1E1E22;
-border-radius: 44px;
-
-position:absolute;
-bottom:36px;
-left:130px;
-
-
-text-align: center;
-align-items: center;
-
-
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 36px;
+    color: var(--white);
+    background: var(--light-green);
+    box-shadow: 0px 1px 2px #1E1E25, 0px 2px 4px #1E1E22;
+    border-radius: 44px;
 }
 
-
-.masik{
-
-width: 252px;
-height: 16px;
-
-
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-
-/* Fehér */
-
-color: #FFFFFF;
-
+.subscribe-text 
+{
+    padding-left:9px;
 }
 
-
-.asd{
-    padding-left: 9px;
-    padding-top:7px;
-    padding-left:50.05px;
-
+.subscribe:hover
+{
+    color:var(--light-green);
+    background-color: var(--white);;
 }
 
-.fa-bell{
-    position: absolute;
-    left:19.5px;
+::placeholder
+{
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 34px;
+    color: var(--black);
 }
 
-.subscribe:hover{
-
-    opacity: 0.5;
-}
-
-::placeholder{
-font-family: 'Roboto';
-font-size: 29px;
-font-weight: 400;
-line-height: 34px;
-color: black;
-
+.button-container,.subscribe,.name-container,.newsletter
+{
+   justify-content: center;
 }

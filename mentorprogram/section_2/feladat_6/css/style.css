@@ -1,135 +1,86 @@
-* {
+* 
+{
     box-sizing: border-box;
     padding: 0;
     margin:0;
 }
 
-header{
-    width:700px;
+:root
+{
+    --green:#006633;
+    --white:#ffffff;
+}
+body
+{
+    font-family: 'Roboto';
+}
+header
+{
     height: 438px;
     margin: 100px auto;
-    position: relative;
 }
-
-.picture{
-
-height:400px;
-width:700px;
-object-fit: cover;
+header,.picture,.picture >img,.bottom_part
+{
+    width:700px
 }
-.picture >img{
-    width:700px;
-    height: 400px;
+.picture,.picture >img
+{
+    height:400px;
     object-fit: cover;
 }
-.bottom_part{
-    height:38px;
-    width: 700px;
-    background: #006633;
-    display: flex;
 
+.bottom-left{
+    height:38px;
+    background: var(--green);
+    
 }
 
+.bottom-left,.bottom-right,.right-details,.right-date,.sport
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .sport{   
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    
-    padding: 0px 5px; 
+    padding: 0px 10px; 
     height: 38px;
-    
-   clear: both; 
-  
-   
-   text-align: center;
-  
-   margin: 0px;
-   transform: skew(30deg);
-
-    display: flex;
-    justify-content: center;
-
-
+    transform: skew(30deg);  
 }
 
-.background{
+.sport-background{
     background-color: white;
     transform: skew(-30deg);
-    
-    padding:0px 5px;
     margin-left:16px;
-    
 }
 
-.right{
+.bottom-right{
     width:260px ;
-    display: flex;
-    
-  align-items: center;
-  position: absolute;
-    right:0px;
-
-  
-
+    margin-left:auto;
 }
 
-.right_1{
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-
-
-display: flex;
-align-items: center;
-justify-content: space-between;
-font-feature-settings: 'pnum' on, 'lnum' on;
-
-
-
-color: #FFFFFF;
-margin-top:9px;
-margin-bottom: 10px;
-
-padding-left: 5px;
-width:130px;
+.right-details{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--white);
+    padding-left: 5px;
+    width:150px;
 }
 
-.right_2{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 23px;
-text-align: right;
-
-/* Fehér */
-
-color: #FFFFFF;
-
-margin:5px 5px 8px 0px;
-
-
-position: absolute;
-right:0px;
-
-height: 22px;
-width: 116px;
-
-
+.icon{
+    margin-right:15px;
+    margin-left: 5px;
+}
+.right-date
+{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    height: 22px;
+    width: 116px;
 }
 
-
-.jobbegy >span {
-    display: flex;
-    align-items: center;
-    
-    justify-content: center;
-}
